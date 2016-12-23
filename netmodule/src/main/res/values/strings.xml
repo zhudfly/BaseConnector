@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NetModule</string>
+
+    <string name="init_success">Net Module Init Success!</string>
+    <string name="init_fail">Net Module Init Fail!</string>
+
+    <string name="decrypt_fail">ALI DECRYPT Fail!</string>
+
+    <string name="get_access_token_success">Get Access Token Success!</string>
+    <string name="get_access_token_fail">Get Access Token Fail!</string>
+
+    <string name="refresh_access_token_success">Refresh Access Token Success!</string>
+    <string name="refresh_access_token_fail">Refresh Access Token Fail!</string>
+    <string name="error_signature">sign error!</string>
+</resources>

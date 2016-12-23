@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String","API_HOST","\"http://182.92.244.38:9900/app/\"");
+            buildConfigField("String","JAQ_APPKEY","\"29124b06-3da3-4e8a-845e-013903058337\"");
+            buildConfigField("String","APP_ID","\"QUOxN4CJOvwyxLeLUSLeys+W5gGNIHosnlLp6hj6pKOrVVmSpjyzjox7u0VSasL/\"");
+            buildConfigField("String","APP_SECRET","\"437ujsOTfJqeBJwxtDebKUlsJIHeg2aD+qH+3Dur/iOIqrOdJciw8SB1WcAlVEvE\"");
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String","API_HOST","\"http://182.92.244.38:9900/app/\"");
+            buildConfigField("String","JAQ_APPKEY","\"29124b06-3da3-4e8a-845e-013903058337\"");
+            buildConfigField("String","APP_ID","\"QUOxN4CJOvwyxLeLUSLeys+W5gGNIHosnlLp6hj6pKOrVVmSpjyzjox7u0VSasL/\"");
+            buildConfigField("String","APP_SECRET","\"437ujsOTfJqeBJwxtDebKUlsJIHeg2aD+qH+3Dur/iOIqrOdJciw8SB1WcAlVEvE\"");
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    //网络相关的库 - Retrofit + OKhttp + RxJava
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile project(':basemodule')
+
+    //阿里聚安全
+    compile(name: 'SecurityGuardSDK-external-release-5.1.38', ext: 'aar')
+}
