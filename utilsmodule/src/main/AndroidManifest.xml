@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.connector.zhudf.basemodule">
+    package="com.connector.zhudf.utilsmodule">
 
     <application
         android:label="@string/app_name"

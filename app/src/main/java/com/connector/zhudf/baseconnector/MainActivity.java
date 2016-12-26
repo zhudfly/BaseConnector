@@ -13,7 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.connector.zhudf.basemodule.utils.AppInfoUtil;
+import com.connector.zhudf.utilsmodule.utils.AppInfoUtil;
 import com.connector.zhudf.netmodule.net.baseclass.BaseApiException;
 import com.connector.zhudf.netmodule.net.baseclass.BaseNetListener;
 import com.connector.zhudf.netmodule.net.entity.BootAdvEntity;
