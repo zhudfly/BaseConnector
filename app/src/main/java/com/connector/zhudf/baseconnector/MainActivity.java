@@ -18,7 +18,7 @@ import com.connector.zhudf.netmodule.net.baseclass.BaseApiException;
 import com.connector.zhudf.netmodule.net.baseclass.BaseNetListener;
 import com.connector.zhudf.netmodule.net.entity.BootAdvEntity;
 import com.connector.zhudf.netmodule.net.netoperate.NetConnector;
-import com.connector.zhudf.netmodule.utils.Logger;
+import com.orhanobut.logger.Logger;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

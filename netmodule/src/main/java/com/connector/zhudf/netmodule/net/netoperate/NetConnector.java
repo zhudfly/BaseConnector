@@ -9,8 +9,8 @@ import com.connector.zhudf.netmodule.net.baseclass.BaseNetConnector;
 import com.connector.zhudf.netmodule.net.baseclass.BaseNetListener;
 import com.connector.zhudf.netmodule.net.entity.BootAdvEntity;
 import com.connector.zhudf.netmodule.utils.GsonUtils;
-import com.connector.zhudf.netmodule.utils.Logger;
 import com.connector.zhudf.netmodule.utils.NetConfig;
+import com.orhanobut.logger.Logger;
 
 import rx.Observable;
 import rx.Subscription;

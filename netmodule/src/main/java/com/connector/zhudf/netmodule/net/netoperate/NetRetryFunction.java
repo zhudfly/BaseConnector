@@ -2,7 +2,7 @@ package com.connector.zhudf.netmodule.net.netoperate;
 
 import com.connector.zhudf.netmodule.net.exception.RegisterException;
 import com.connector.zhudf.netmodule.net.exception.RefreshAccessException;
-import com.connector.zhudf.netmodule.utils.Logger;
+import com.orhanobut.logger.Logger;
 
 import rx.Observable;
 import rx.functions.Func1;

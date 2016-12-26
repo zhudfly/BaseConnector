@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import com.connector.zhudf.netmodule.net.intercepter.RequestInterceptor;
 import com.connector.zhudf.netmodule.net.netoperate.NetServiceInterface;
 import com.connector.zhudf.netmodule.net.converter.GConverterFactory;
+import com.orhanobut.logger.Logger;
 
 import java.io.File;
 import java.io.IOException;

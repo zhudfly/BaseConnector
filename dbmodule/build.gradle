@@ -22,23 +22,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
-
-    // 日志打印 [https://github.com/orhanobut/logger]
-    compile 'com.orhanobut:logger:1.15'
-
-    // 生成唯一的device id
-    compile files('libs/utdid4all-1.1.5_proguard.jar')
-
-    // butterKnife注解 [http://jakewharton.github.io/butterknife/]
-    compile 'com.jakewharton:butterknife:8.4.0'
-
-    // 事件通知 [http://greenrobot.org/eventbus/documentation/how-to-get-started/]
-    compile 'org.greenrobot:eventbus:3.0.0'
-
 }

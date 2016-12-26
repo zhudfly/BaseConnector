@@ -4,8 +4,8 @@ import com.alibaba.wireless.security.jaq.JAQException;
 import com.alibaba.wireless.security.jaq.SecuritySignature;
 import com.connector.zhudf.netmodule.R;
 import com.connector.zhudf.netmodule.net.entity.TokenEntity;
-import com.connector.zhudf.netmodule.utils.Logger;
 import com.connector.zhudf.netmodule.utils.NetConfig;
+import com.orhanobut.logger.Logger;
 
 import java.io.IOException;
 
@@ -57,7 +57,7 @@ public class RequestInterceptor implements Interceptor {
         try {
             return sign(NetConfig.getInstance().getDeviceId() + timestamp + NetConfig.getInstance().getAppSdkSecret());
         } catch (Exception e) {
-            Logger.e(this.getClass().getSimpleName(), NetConfig.getInstance().getContext().getString(R.string.error_signature) + e.getMessage());
+            Logger.e(NetConfig.getInstance().getContext().getString(R.string.error_signature) + e.getMessage());
             return "";
         }
     }
